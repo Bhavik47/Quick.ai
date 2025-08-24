@@ -126,5 +126,5 @@ jobs:
         with:
           app-name: 'quickai-backend'
           slot-name: 'Production'
-          package: easyprompt-app-main/server
+          package: .
 
