@@ -22,7 +22,7 @@ app.use(clerkMiddleware())
 // Health check route
 app.get('/', (req, res) => {
     console.log("Server is running");
-    res.send('server is Live!'));
+    res.send('server is Live!');
 });
 
 // Require authentication for all routes below
