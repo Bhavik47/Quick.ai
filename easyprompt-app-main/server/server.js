@@ -20,7 +20,10 @@ app.use(express.json())
 app.use(clerkMiddleware())
 
 // Health check route
-app.get('/', (req, res) => res.send('server is Live!'))
+app.get('/', (req, res) => {
+    console.log("Server is running");
+    res.send('server is Live!'));
+});
 
 // Require authentication for all routes below
 app.use(requireAuth())
